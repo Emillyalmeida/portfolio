@@ -3,7 +3,7 @@ import Routers from "./routers";
 import { themes } from "./styles/theme";
 import GlobalStyle from "./styles/global";
 import { ThemeProvider } from "styled-components";
-import { ColorContext } from "./providers/color";
+import { ColorContext } from "./providers/theme";
 
 function App() {
   const { currentTheme } = useContext(ColorContext);

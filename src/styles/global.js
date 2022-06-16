@@ -10,7 +10,8 @@ export default createGlobalStyle`
 
 body{
   background-color: ${(props) => props.theme.backgroundColor};
-  font-family: "Inter", serif;
+  color: ${(props) => props.theme.color};
+  font-family: 'Roboto Mono', monospace;
   height: 100vh;
   width: 100vw;
   list-style: none;
@@ -21,7 +22,7 @@ h1,h2,h3,h4{
 }
 button{
     cursor: pointer;
-    font-family: "Inter", serif;
+    font-family: 'Roboto Mono', monospace;
 }
 /* ::-webkit-scrollbar {
 display: none;
