@@ -4,7 +4,10 @@ const lightTheme = {
   card: {
     backgroundColor: "#2a6f97",
   },
-  header: {},
+  nav: {
+    backgroundColor: "#0466c8",
+    hover: "#023e7d",
+  },
   button: {
     textColor: "#61a5c2",
     backgroundColor: "#001845",
@@ -19,7 +22,10 @@ const darkTheme = {
   card: {
     backgroundColor: "#023e7d",
   },
-  header: {},
+  nav: {
+    backgroundColor: "#023e7d",
+    hover: "#001233",
+  },
 
   button: {
     textColor: "#89c2d9",
