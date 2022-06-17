@@ -6,6 +6,7 @@ import {
   Footer,
   IAm,
   InfoMe,
+  Logo,
   MyContact,
   MyPortfolio,
   MySkills,
@@ -20,6 +21,12 @@ const Home = () => {
       <Nav />
       <BtnMode />
       <Container>
+        <Logo>
+          <div>
+            {" "}
+            <span>E</span>
+          </div>
+        </Logo>
         <IAm>
           <div>
             <h1>Olá, Eu sou a Emilly</h1>
@@ -32,11 +39,10 @@ const Home = () => {
         <InfoMe>
           <h2>É um prazer ver você aqui !!!</h2>
           <p>
-            Iniciei a minha jornada na programação em 2021. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Ea, tempore. Doloremque
-            impedit nihil, exercitationem ut dolor at ab iure corrupti
-            consequatur sequi nesciunt consectetur, rem repellendus. Amet odit
-            voluptatibus provident!
+            Seja Bem-vindo(a) !!! Aqui você vai conhecer mais sobre o que faço e
+            que eu sou.Iniciei a minha jornada na programação em 2021. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Ea, tempore.
+            Doloremque impedit nihil, exercitationem ut dolor at ab iure!
           </p>
         </InfoMe>
         <MySkills>

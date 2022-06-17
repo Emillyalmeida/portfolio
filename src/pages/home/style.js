@@ -3,9 +3,8 @@ import circle from "../../assets/circle.svg";
 
 export const IAm = styled.section`
   width: 100%;
-  padding-top: 100px;
   display: flex;
-  height: 100vh;
+  height: 90vh;
   flex-direction: column;
   align-items: center;
   gap: 30px;
@@ -49,14 +48,39 @@ export const IAm = styled.section`
   }
 `;
 
+export const Logo = styled.div`
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+
+  div {
+    width: 70px;
+    height: 70px;
+    background-color: ${(props) => props.theme.nav.backgroundColor};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    span {
+      font-size: 3rem;
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 7px;
+    }
+  }
+`;
+
 export const InfoMe = styled.section`
   width: 100%;
-  height: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  padding: 30px 10%;
   gap: 20px;
   background-color: ${(props) => props.theme.terciary};
 `;
@@ -102,18 +126,25 @@ export const AboutMe = styled.div`
   background-color: ${(props) => props.theme.terciary};
 
   div {
-    width: 50%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+
+    p {
+      text-align: justify;
+    }
   }
 
   figure {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: none;
+    @media (min-width: 768px) {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;
 
