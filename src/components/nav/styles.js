@@ -54,6 +54,13 @@ export const MenuOpen = styled.div`
       font-size: 1.25rem;
       font-weight: 600;
       padding-bottom: 7px;
+      cursor: pointer;
+
+      &:hover {
+        color: ${(props) => props.theme.nav.hover};
+        font-weight: 700;
+        transform: translate(7px, 0px);
+      }
     }
   }
 
