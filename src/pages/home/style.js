@@ -44,14 +44,69 @@ export const IAm = styled.section`
 
 export const InfoMe = styled.section`
   width: 100%;
-  height: 600px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0 20px;
   gap: 20px;
-  background-color: ${(props) => props.theme.secundaryBg};
+  background-color: ${(props) => props.theme.terciary};
 `;
 
-export const MySkills = styled.div``;
+export const MySkills = styled.div`
+  width: 70%;
+  height: 300px;
+  margin-top: 30px;
+  border-radius: 8px;
+  background-color: ${(props) => props.theme.secundaryBg};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+  gap: 20px;
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  ul {
+    list-style: none;
+    li {
+      padding-top: 7px;
+    }
+  }
+`;
+
+export const MyPortfolio = styled.div`
+  margin-top: 30px;
+  height: 500px;
+`;
+
+export const AboutMe = styled.div`
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  background-color: ${(props) => props.theme.terciary};
+
+  div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figure {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const BtnSeeMore = styled.button`
+  border: none;
+`;

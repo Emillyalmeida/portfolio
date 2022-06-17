@@ -2,6 +2,7 @@ const lightTheme = {
   color: "#001233",
   backgroundColor: "#90e0ef",
   secundaryBg: "#00b4d8",
+  terciary: "#caf0f8",
 
   card: {
     backgroundColor: "#2a6f97",
@@ -21,6 +22,7 @@ const darkTheme = {
   color: "#89c2d9",
   backgroundColor: "#001845",
   secundaryBg: "#0353a4",
+  terciary: "#000814",
 
   card: {
     backgroundColor: "#023e7d",
