@@ -14,13 +14,20 @@ export const IAm = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
 
     h1 {
       font-style: italic;
       font-weight: 700;
       font-size: 3rem;
       transition: all 0.3s;
+      text-align: center;
       text-shadow: 2px 2px 5px #023e7d, 2px 2px 7px #0466c8;
+    }
+    h2 {
+      padding-top: 10px;
+      padding-bottom: 30px;
+      text-align: center;
     }
   }
 
@@ -56,6 +63,8 @@ export const InfoMe = styled.section`
 
 export const MySkills = styled.div`
   width: 70%;
+  min-width: 300px;
+  max-width: 500px;
   height: 300px;
   margin-top: 30px;
   border-radius: 8px;
@@ -97,6 +106,7 @@ export const AboutMe = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 
   figure {
@@ -108,5 +118,47 @@ export const AboutMe = styled.div`
 `;
 
 export const BtnSeeMore = styled.button`
-  border: none;
+  background-color: transparent;
+  width: 100px;
+  height: 35px;
+  font-weight: 700;
+  border: 2px solid transparent;
+  border-color: ${(props) => props.theme.button.backgroundColor};
+  color: ${(props) => props.theme.button.backgroundColor};
+
+  &:hover {
+    background-color: ${(props) => props.theme.button.backgroundColor};
+    color: ${(props) => props.theme.button.textColor};
+    transition: 0.4s;
+  }
+`;
+
+export const MyContact = styled.div`
+  padding-top: 30px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+
+  div {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    gap: 30px;
+
+    svg {
+      font-size: 3rem;
+      cursor: pointer;
+    }
+  }
+`;
+
+export const Footer = styled.footer`
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${(props) => props.theme.terciary};
 `;

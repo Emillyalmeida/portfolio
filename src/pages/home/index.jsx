@@ -3,13 +3,16 @@ import Nav from "../../components/nav";
 import {
   AboutMe,
   BtnSeeMore,
+  Footer,
   IAm,
   InfoMe,
+  MyContact,
   MyPortfolio,
   MySkills,
 } from "./style";
 import myimg from "../../assets/IMG_20220305_120632-removebg-preview.png";
 import Container from "../../components/container";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Home = () => {
   return (
@@ -68,6 +71,28 @@ const Home = () => {
             <img src="" alt="" />
           </figure>
         </AboutMe>
+        <MySkills>
+          <h3>Estou estudando</h3>
+          <ul>
+            <li> &lt; Testes unitarios /&gt;</li>
+            <li>&lt; Testes E2E /&gt;</li>
+            <li> &lt; SQL /&gt;</li>
+            <li> &lt; Node.js /&gt;</li>
+            <li> &lt; Sass /&gt;</li>
+            <li> &lt; Vue.js /&gt;</li>
+          </ul>
+        </MySkills>
+        <MyContact>
+          <h2> Acompanhe meus projetos</h2>
+          <div>
+            <BsGithub />
+            <BsLinkedin />
+          </div>
+          <BtnSeeMore>Contato</BtnSeeMore>
+        </MyContact>
+        <Footer>
+          <h3> &copy; Emilly Almeida</h3>
+        </Footer>
       </Container>
     </>
   );
