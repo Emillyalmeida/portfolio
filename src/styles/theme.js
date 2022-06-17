@@ -1,12 +1,14 @@
 const lightTheme = {
   color: "#001233",
-  backgroundColor: "#61a5c2",
+  backgroundColor: "#90e0ef",
+  secundaryBg: "#00b4d8",
+
   card: {
     backgroundColor: "#2a6f97",
   },
   nav: {
-    backgroundColor: "#0466c8",
-    hover: "#023e7d",
+    backgroundColor: "#0096c7",
+    hover: "#00b4d8",
   },
   button: {
     textColor: "#61a5c2",
@@ -18,6 +20,7 @@ const lightTheme = {
 const darkTheme = {
   color: "#89c2d9",
   backgroundColor: "#001845",
+  secundaryBg: "#0353a4",
 
   card: {
     backgroundColor: "#023e7d",
