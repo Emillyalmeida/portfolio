@@ -86,12 +86,12 @@ export const InfoMe = styled.section`
 `;
 
 export const MySkills = styled.div`
-  width: 70%;
+  width: 60%;
   min-width: 300px;
   max-width: 500px;
   height: 300px;
-  margin-top: 30px;
-  border-radius: 8px;
+  margin-top: 50px;
+  border-radius: 10px;
   background-color: ${(props) => props.theme.secundaryBg};
   display: flex;
   flex-direction: column;
@@ -101,20 +101,43 @@ export const MySkills = styled.div`
 
   h3 {
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   ul {
     list-style: none;
     li {
       padding-top: 7px;
+      font-size: 1.2rem;
     }
   }
 `;
 
 export const MyPortfolio = styled.div`
-  margin-top: 30px;
-  height: 500px;
+  padding: 50px 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+
+  h2 {
+    padding-left: 30px;
+    font-size: 1.75rem;
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  button {
+    align-self: center;
+  }
 `;
 
 export const AboutMe = styled.div`
@@ -150,9 +173,10 @@ export const AboutMe = styled.div`
 
 export const BtnSeeMore = styled.button`
   background-color: transparent;
-  width: 100px;
-  height: 35px;
+  width: 150px;
+  height: 42px;
   font-weight: 700;
+  font-size: 1.2rem;
   border: 2px solid transparent;
   border-color: ${(props) => props.theme.button.backgroundColor};
   color: ${(props) => props.theme.button.backgroundColor};

@@ -61,6 +61,9 @@ const Home = () => {
           <h2>Portifolio</h2>
           <ul>
             <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
           </ul>
           <BtnSeeMore>Veja Mais</BtnSeeMore>
         </MyPortfolio>

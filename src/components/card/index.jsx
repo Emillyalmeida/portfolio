@@ -8,7 +8,7 @@ const Card = () => {
       <div></div>
       <section>
         <div>
-          <p>Ver detalhes</p>
+          <p>Veja detalhes</p>
         </div>
       </section>
     </LiCard>

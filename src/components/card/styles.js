@@ -1,17 +1,26 @@
 import styled from "styled-components";
 
 export const LiCard = styled.li`
-  width: 250px;
-  height: 200px;
+  width: 280px;
+  height: 230px;
   border-radius: 10px;
   list-style: none;
   position: relative;
   cursor: pointer;
+  margin-bottom: 10px;
+  @media (min-width: 768px) {
+    width: 330px;
+    height: 300px;
+  }
 
   img {
-    width: 250px;
-    height: 200px;
+    width: 280px;
+    height: 230px;
     border-radius: 10px;
+    @media (min-width: 768px) {
+      width: 330px;
+      height: 300px;
+    }
   }
 
   > div {
@@ -40,8 +49,8 @@ export const LiCard = styled.li`
     justify-content: center;
 
     div {
-      width: 100px;
-      height: 100px;
+      width: 125px;
+      height: 125px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -49,6 +58,7 @@ export const LiCard = styled.li`
       text-align: center;
       font-weight: 700;
       text-transform: uppercase;
+      font-size: 1.1rem;
       background-color: ${(props) => props.theme.terciary};
       border-radius: 50%;
       opacity: 0;
