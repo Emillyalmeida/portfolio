@@ -15,8 +15,10 @@ import myimg from "../../assets/IMG_20220305_120632-removebg-preview.png";
 import Container from "../../components/container";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Card from "../../components/card";
+import { useHistory } from "react-router-dom";
 
 const Home = () => {
+  const history = useHistory();
   return (
     <>
       <Nav />
@@ -58,14 +60,16 @@ const Home = () => {
         </MySkills>
 
         <MyPortfolio>
-          <h2>Portifolio</h2>
+          <h2>Portfólio</h2>
           <ul>
             <Card></Card>
             <Card></Card>
             <Card></Card>
             <Card></Card>
           </ul>
-          <BtnSeeMore>Veja Mais</BtnSeeMore>
+          <BtnSeeMore onClick={() => history.push("/portfolio")}>
+            Veja Mais
+          </BtnSeeMore>
         </MyPortfolio>
         <AboutMe>
           <div>
@@ -76,7 +80,9 @@ const Home = () => {
               tenetur esse, cum error recusandae aliquid ipsum eligendi, vitae
               sequi sit, dolorum ipsa.
             </p>
-            <BtnSeeMore>Me conheça</BtnSeeMore>
+            <BtnSeeMore onClick={() => history.push("/sobre-mim")}>
+              Me conheça
+            </BtnSeeMore>
           </div>
           <figure>
             <img src="" alt="" />
@@ -96,10 +102,24 @@ const Home = () => {
         <MyContact>
           <h2> Acompanhe meus projetos</h2>
           <div>
-            <BsGithub />
-            <BsLinkedin />
+            <a
+              href="https://github.com/Emillyalmeida"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <BsGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/emilly-almeida-front-end/"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <BsLinkedin />
+            </a>
           </div>
-          <BtnSeeMore>Contato</BtnSeeMore>
+          <BtnSeeMore onClick={() => history.push("/contato")}>
+            Contato
+          </BtnSeeMore>
         </MyContact>
         <Footer>
           <h3> &copy; Emilly Almeida</h3>

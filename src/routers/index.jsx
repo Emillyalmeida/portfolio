@@ -8,7 +8,7 @@ const Routers = () => {
         <Home />
       </Route>
       <Route path="/contato"></Route>
-      <Route path="/portifolio"></Route>
+      <Route path="/portfolio"></Route>
       <Route path="/sobre-mim"></Route>
     </Switch>
   );

@@ -153,7 +153,7 @@ export const AboutMe = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 
     p {
       text-align: justify;
@@ -189,7 +189,7 @@ export const BtnSeeMore = styled.button`
 `;
 
 export const MyContact = styled.div`
-  padding-top: 30px;
+  padding-top: 50px;
   height: 280px;
   display: flex;
   align-items: center;
@@ -201,6 +201,15 @@ export const MyContact = styled.div`
     height: 100px;
     align-items: center;
     gap: 30px;
+
+    a {
+      color: ${(props) => props.theme.color};
+
+      &:hover {
+        opacity: 0.6;
+        transition: opacity 0, 3s;
+      }
+    }
 
     svg {
       font-size: 3rem;

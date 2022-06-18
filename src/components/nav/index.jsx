@@ -18,7 +18,7 @@ const Nav = () => {
         <IoMdClose onClick={() => setOpen(false)} />
         <ul>
           <li onClick={() => history.push("/")}>Home</li>
-          <li onClick={() => history.push("/portifolio")}>Portifolio</li>
+          <li onClick={() => history.push("/portifolio")}>Portfólio</li>
           <li onClick={() => history.push("/sobre-mim")}>Sobre mim</li>
           <li onClick={() => history.push("/contato")}>Contato</li>
         </ul>

@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 export const MenuClose = styled.div`
   position: fixed;
+  z-index: 9999999999;
   height: 55px;
   width: 55px;
   display: flex;
@@ -25,6 +26,7 @@ export const MenuClose = styled.div`
 
 export const MenuOpen = styled.div`
   position: fixed;
+  z-index: 9999999999;
   top: 0;
   right: 0;
   background-color: ${(props) => props.theme.nav.backgroundColor};
