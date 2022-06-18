@@ -14,6 +14,7 @@ import {
 import myimg from "../../assets/IMG_20220305_120632-removebg-preview.png";
 import Container from "../../components/container";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import Card from "../../components/card";
 
 const Home = () => {
   return (
@@ -23,7 +24,6 @@ const Home = () => {
       <Container>
         <Logo>
           <div>
-            {" "}
             <span>E</span>
           </div>
         </Logo>
@@ -59,7 +59,9 @@ const Home = () => {
 
         <MyPortfolio>
           <h2>Portifolio</h2>
-          <ul></ul>
+          <ul>
+            <Card></Card>
+          </ul>
           <BtnSeeMore>Veja Mais</BtnSeeMore>
         </MyPortfolio>
         <AboutMe>
