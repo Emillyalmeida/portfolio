@@ -13,6 +13,10 @@ export const MenuClose = styled.div`
   top: 10px;
   right: 10px;
   background-color: ${(props) => props.theme.nav.backgroundColor};
+  @media (min-width: 768px) {
+    width: 65px;
+    height: 65px;
+  }
 
   &:hover {
     background-color: ${(props) => props.theme.nav.hover};
@@ -21,6 +25,9 @@ export const MenuClose = styled.div`
 
   svg {
     font-size: 2.5rem;
+    @media (min-width: 768px) {
+      font-size: 2.75rem;
+    }
   }
 `;
 
@@ -36,8 +43,11 @@ export const MenuOpen = styled.div`
   transition: width 0.3s, height 0.3s;
   display: none;
   justify-content: center;
-  border-bottom-left-radius: 300px;
+  border-bottom-left-radius: 100%;
   padding-left: 20px;
+  @media (min-width: 768px) {
+    padding-top: 80px;
+  }
 
   svg {
     position: fixed;
@@ -46,6 +56,10 @@ export const MenuOpen = styled.div`
     width: 40px;
     height: 40px;
     cursor: pointer;
+    @media (min-width: 768px) {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   ul {
@@ -57,6 +71,9 @@ export const MenuOpen = styled.div`
       font-weight: 600;
       padding-bottom: 7px;
       cursor: pointer;
+      @media (min-width: 768px) {
+        font-size: 1.5rem;
+      }
 
       &:hover {
         color: ${(props) => props.theme.nav.hover};
@@ -73,5 +90,9 @@ export const MenuOpen = styled.div`
       height: 300px;
       width: 300px;
       transition: width 0.3s, height 0.3s;
+      @media (min-width: 768px) {
+        width: 400px;
+        height: 400px;
+      }
     `}
 `;
