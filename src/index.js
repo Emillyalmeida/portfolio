@@ -5,14 +5,17 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { ColorProvider } from "./providers/theme";
+import { ListProjectsProvider } from "./providers/projects";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ColorProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <ListProjectsProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ListProjectsProvider>
     </ColorProvider>
   </React.StrictMode>
 );
