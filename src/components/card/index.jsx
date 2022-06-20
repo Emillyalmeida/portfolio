@@ -1,17 +1,19 @@
 import imgTest from "../../assets/Adopet-cinza.png";
 import { LiCard } from "./styles";
 
-const Card = () => {
+const Card = ({ onOpen }) => {
   return (
-    <LiCard>
-      <img src={imgTest} alt="name" />
-      <div></div>
-      <section>
-        <div>
-          <p>Veja detalhes</p>
-        </div>
-      </section>
-    </LiCard>
+    <>
+      <LiCard onClick={onOpen}>
+        <img src={imgTest} alt="name" />
+        <div></div>
+        <section>
+          <div>
+            <p>Veja detalhes</p>
+          </div>
+        </section>
+      </LiCard>
+    </>
   );
 };
 
