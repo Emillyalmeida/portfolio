@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const LiCard = styled.li`
   width: 280px;
-  height: 230px;
+  height: 210px;
   border-radius: 10px;
   list-style: none;
   position: relative;
@@ -10,16 +10,16 @@ export const LiCard = styled.li`
   margin-bottom: 10px;
   @media (min-width: 768px) {
     width: 330px;
-    height: 300px;
+    height: 280px;
   }
 
   img {
     width: 280px;
-    height: 230px;
+    height: 210px;
     border-radius: 10px;
     @media (min-width: 768px) {
       width: 330px;
-      height: 300px;
+      height: 280px;
     }
   }
 

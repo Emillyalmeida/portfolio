@@ -1,11 +1,14 @@
-import imgTest from "../../assets/Adopet-cinza.png";
 import { LiCard } from "./styles";
+import { useDisclosure } from "@chakra-ui/react";
+import ModalProject from "../ModalProject";
 
-const Card = ({ onOpen }) => {
+const Card = ({ project }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
+      <ModalProject onClose={onClose} isOpen={isOpen} project={project} />
       <LiCard onClick={onOpen}>
-        <img src={imgTest} alt="name" />
+        <img src={project.img} alt={project.name} />
         <div></div>
         <section>
           <div>

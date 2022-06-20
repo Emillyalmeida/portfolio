@@ -33,7 +33,7 @@ const darkTheme = {
   },
 
   button: {
-    textColor: "#89c2d9",
+    textColor: "#a9d6e5",
     backgroundColor: "#0466c8",
     hover: "#002855",
   },

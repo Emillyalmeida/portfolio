@@ -12,7 +12,7 @@ export const ListProjectsProvider = ({ children }) => {
     {
       id: 1,
       name: "Adopet",
-      decription:
+      description:
         "A AdoPet foi desenvolvida com o intuito de conectar as pessoas que desejam adotar um pet com aqueles que necessitam encontrar um novo lar para os bichinhos.",
       img: `${AdopetImg}`,
       techs: [
@@ -29,7 +29,7 @@ export const ListProjectsProvider = ({ children }) => {
     {
       id: 2,
       name: "Marvel's House",
-      decription:
+      description:
         "Consiste de uma tela de lista de quadrinhos, consumindo a Api da Marvel. Tem um sistema de paginação onde pode navegar para ver mais quadrinhos ou voltar para as paginas anteriores. Além disso, 10% dos quadinho são marcados com o selo de raro aleatoriamente.",
       img: `${MarvelHouseImg}`,
       techs: [
@@ -47,7 +47,7 @@ export const ListProjectsProvider = ({ children }) => {
     {
       id: 3,
       name: "DO-it",
-      decription:
+      description:
         "A AdoPet foi desenvolvida com o intuito de conectar as pessoas que desejam adotar um pet com aqueles que necessitam encontrar um novo lar para os bichinhos.",
       img: `${DoItImg}`,
       techs: [
@@ -64,7 +64,7 @@ export const ListProjectsProvider = ({ children }) => {
     {
       id: 4,
       name: "KenzieHub ",
-      decription:
+      description:
         "É uma plataforma que tem o objetivo de organizar as suas tecnologias estudadas e ver o seu avanço de nível nelas.",
       img: `${KenzieHubImg}`,
       techs: [
