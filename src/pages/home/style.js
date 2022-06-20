@@ -89,7 +89,7 @@ export const MySkills = styled.div`
   width: 60%;
   min-width: 300px;
   max-width: 500px;
-  height: 300px;
+  height: auto;
   margin-top: 50px;
   border-radius: 10px;
   background-color: ${(props) => props.theme.secundaryBg};
@@ -167,6 +167,13 @@ export const AboutMe = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    img {
+      background-color: ${(props) => props.theme.secundaryBg};
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
     }
   }
 `;

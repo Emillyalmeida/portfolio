@@ -16,13 +16,17 @@ import Container from "../../components/container";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Card from "../../components/card";
 import { useHistory } from "react-router-dom";
+import { useDisclosure } from "@chakra-ui/react";
+import ModalProject from "../../components/ModalProject";
 
 const Home = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const history = useHistory();
   return (
     <>
       <Nav />
       <BtnMode />
+      <ModalProject onClose={onClose} isOpen={isOpen} />
       <Container>
         <Logo>
           <div>
@@ -42,9 +46,10 @@ const Home = () => {
           <h2>É um prazer ver você aqui !!!</h2>
           <p>
             Seja Bem-vindo(a) !!! Aqui você vai conhecer mais sobre o que faço e
-            que eu sou.Iniciei a minha jornada na programação em 2021. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Ea, tempore.
-            Doloremque impedit nihil, exercitationem ut dolor at ab iure!
+            quem eu sou.Iniciei a minha jornada na programação em 2021. Desde
+            então, tenho me dedicado a aprender e evoluir cada vez minhas mais
+            habilidades. Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit
           </p>
         </InfoMe>
         <MySkills>
@@ -62,7 +67,7 @@ const Home = () => {
         <MyPortfolio>
           <h2>Portfólio</h2>
           <ul>
-            <Card></Card>
+            <Card onOpen={onOpen}></Card>
             <Card></Card>
             <Card></Card>
             <Card></Card>
@@ -85,7 +90,7 @@ const Home = () => {
             </BtnSeeMore>
           </div>
           <figure>
-            <img src="" alt="" />
+            <img src={myimg} alt="emilly" />
           </figure>
         </AboutMe>
         <MySkills>
