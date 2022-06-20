@@ -16,7 +16,7 @@ const ModalProject = ({ onClose, isOpen, project }) => {
             <div>
               <ul>
                 {project.techs.map((tech) => (
-                  <li>{tech}</li>
+                  <li key={tech}>{tech}</li>
                 ))}
               </ul>
             </div>

@@ -1,5 +1,3 @@
-import BtnMode from "../../components/btnMode";
-import Nav from "../../components/nav";
 import {
   AboutMe,
   BtnSeeMore,
@@ -25,8 +23,6 @@ const Home = () => {
 
   return (
     <>
-      <Nav />
-      <BtnMode />
       <Container>
         <Logo>
           <div>
@@ -43,13 +39,14 @@ const Home = () => {
           </figure>
         </IAm>
         <InfoMe>
-          <h2>É um prazer ver você aqui !!!</h2>
+          <h2>Seja Bem-vindo(a) !!!</h2>
           <p>
-            Seja Bem-vindo(a) !!! Aqui você vai conhecer mais sobre o que faço e
-            quem eu sou.Iniciei a minha jornada na programação em 2021. Desde
-            então, tenho me dedicado a aprender e evoluir cada vez minhas mais
-            habilidades. Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit
+            Obrigada pela sua visita !!! Aqui você vai conhecer mais sobre o que
+            faço e quem eu sou.Iniciei a minha jornada na programação em 2021.
+            Desde então, tenho me dedicado a aprender e evoluir cada vez minhas
+            mais habilidades. Fique a vontade para explorar todas as seções do
+            site, acompanhe minha trajetória, os projetos que estou
+            desenvolvendo e o que estou estudando.
           </p>
         </InfoMe>
         <MySkills>

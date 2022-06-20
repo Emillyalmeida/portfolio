@@ -144,16 +144,19 @@ export const AboutMe = styled.div`
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 20px 20px;
   background-color: ${(props) => props.theme.terciary};
 
   div {
-    flex: 1;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
+    @media (min-width: 768px) {
+      width: 50%;
+    }
 
     p {
       text-align: justify;
@@ -163,7 +166,7 @@ export const AboutMe = styled.div`
   figure {
     display: none;
     @media (min-width: 768px) {
-      flex: 1;
+      width: 40%;
       display: flex;
       flex-direction: column;
       align-items: center;

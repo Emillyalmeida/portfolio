@@ -11,7 +11,6 @@ export const ModalContainer = styled.div`
   display: ${(props) => (props.isOpen ? "flex" : "none")};
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   box-sizing: border-box;
   z-index: 1400;
 `;
@@ -92,16 +91,17 @@ export const MSection = styled.div`
         }
 
         ul {
-          @media (max-height: 700px) {
+          @media (max-height: 700px) and (max-width: 700px) {
             display: none;
           }
           display: flex;
-          flex: wrap;
-        }
-        li {
-          list-style: none;
-          width: 48%;
-          font-size: 0.9rem;
+          flex-wrap: wrap;
+
+          li {
+            list-style: none;
+            width: 48%;
+            font-size: 0.9rem;
+          }
         }
       }
 
