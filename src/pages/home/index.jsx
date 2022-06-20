@@ -16,17 +16,17 @@ import Container from "../../components/container";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Card from "../../components/card";
 import { useHistory } from "react-router-dom";
-import { useDisclosure } from "@chakra-ui/react";
-import ModalProject from "../../components/ModalProject";
+import { useContext } from "react";
+import { ListProjectsContext } from "../../providers/projects";
 
 const Home = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { listProjects } = useContext(ListProjectsContext);
   const history = useHistory();
+
   return (
     <>
       <Nav />
       <BtnMode />
-      <ModalProject onClose={onClose} isOpen={isOpen} />
       <Container>
         <Logo>
           <div>
@@ -67,10 +67,9 @@ const Home = () => {
         <MyPortfolio>
           <h2>Portfólio</h2>
           <ul>
-            <Card onOpen={onOpen}></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
+            {listProjects.map((project) => (
+              <Card project={project} key={project.id} />
+            ))}
           </ul>
           <BtnSeeMore onClick={() => history.push("/portfolio")}>
             Veja Mais
@@ -80,10 +79,12 @@ const Home = () => {
           <div>
             <h2> Sobre mim</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              impedit omnis reiciendis sed doloribus rerum consequatur obcaecati
-              tenetur esse, cum error recusandae aliquid ipsum eligendi, vitae
-              sequi sit, dolorum ipsa.
+              Prazer sou a Emilly! Tenho 22 anos, sou formada em tecnica qm
+              quimica mas atualmente sou Desenvolvedora Front-End.Sou Bahiana,
+              amo experimentar coisas novas e desbravar Lorem ipsum dolor, sit
+              amet consectetur adipisicing elit. Sint impedit omnis reiciendis
+              sed doloribus rerum consequatur obcaecati tenetur esse, dolorum
+              ipsa.
             </p>
             <BtnSeeMore onClick={() => history.push("/sobre-mim")}>
               Me conheça
@@ -127,7 +128,7 @@ const Home = () => {
           </BtnSeeMore>
         </MyContact>
         <Footer>
-          <h3> &copy; Emilly Almeida</h3>
+          <h3> &copy;Emilly Almeida</h3>
         </Footer>
       </Container>
     </>
