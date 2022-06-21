@@ -11,6 +11,7 @@ import { BsInstagram } from "react-icons/bs";
 
 import { Hobbies, InfoHobbies } from "./style";
 import { Saudation } from "../contact/style";
+import LinkSites from "../../components/link";
 
 const AboutMe = () => {
   return (
@@ -24,9 +25,9 @@ const AboutMe = () => {
             Eu sou Desenvolvedora Fron-end, vivo no Brasil no estado da Bahia.
             Mas não é só de codigos que se vive um Desenvolvedora, eu também mo
             animais , principalmente gatos, tenho um que se chama Bichano. Sou a
-            apaixonda por livros de ficção, poder conhecer novos mundos e me
-            identificar com os personagens. Além disso,faço crochê, me ajuda
-            bastante a desestressar e diminuir a ansiedade.
+            apaixonda por livros de ficção, assistir animes e series. Além
+            disso,faço crochê, me ajuda bastante a desestressar e diminuir a
+            ansiedade.
           </p>
         </div>
         <img src={imgAnime} alt="meu desenho" />
@@ -44,11 +45,19 @@ const AboutMe = () => {
               de vista e ampliar nossa maneira de pensar.Você pode acompanhar
               leituras pelo skoob.
             </p>
-            <ImBook />
+            <LinkSites
+              isRow
+              link={
+                "https://api.whatsapp.com/send?phone=5575983233925&text=Ol%C3%A1%20Emilly"
+              }
+            >
+              <ImBook />
+              <h3>Skoob</h3>
+            </LinkSites>
           </div>
         </InfoHobbies>
 
-        <InfoHobbies>
+        <InfoHobbies isReverse>
           <img src={croche} alt="linha de croche" />
           <div>
             <h2>Crochê</h2>
@@ -58,7 +67,13 @@ const AboutMe = () => {
               crochê,no começo foi bem dificil mas passei a gostar bastante.
               Visite meu instagram para ver algumas peças.
             </p>
-            <BsInstagram />
+            <LinkSites
+              isRow
+              link="https://api.whatsapp.com/send?phone=5575983233925&text=Ol%C3%A1%20Emilly"
+            >
+              <BsInstagram />
+              <h3>Instagram</h3>
+            </LinkSites>
           </div>
         </InfoHobbies>
       </Hobbies>
