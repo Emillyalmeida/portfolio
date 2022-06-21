@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const appearRigth = keyframes`
+from{
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+to{
+  opacity: 1;
+  transform: translateX(0px)
+}
+`;
 
 export const Saudation = styled.div`
   height: auto;
@@ -18,6 +30,7 @@ export const Saudation = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    animation: ${appearRigth} 1.5s;
     background-color: ${(props) => props.theme.terciary};
     @media (min-width: 768px) {
       width: 50%;
@@ -42,7 +55,7 @@ export const MailFone = styled.div`
   display: flex;
   padding: 30px 20px;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-evenly;
@@ -73,25 +86,5 @@ export const InfoContact = styled.section`
   gap: 15px;
   @media (min-width: 768px) {
     flex-direction: row;
-  }
-
-  a {
-    color: ${(props) => props.theme.color};
-    text-decoration: none;
-
-    &:hover {
-      opacity: 0.6;
-      transition: opacity 0, 3s;
-    }
-  }
-
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    svg {
-      font-size: 4rem;
-    }
   }
 `;

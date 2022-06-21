@@ -1,6 +1,10 @@
 import Container from "../../components/container";
 import Title from "../../components/Title";
+import Footer from "../../components/footer";
+import LinkSites from "../../components/link";
+
 import { InfoContact, MailFone, Saudation } from "./style";
+
 import {
   BsGithub,
   BsLinkedin,
@@ -9,7 +13,6 @@ import {
 } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import imgAvatar from "../../assets/ReadyPlayerMe-Avatar.png";
-import Footer from "../../components/footer";
 
 const Contact = () => {
   return (
@@ -47,36 +50,22 @@ const Contact = () => {
         </div>
       </MailFone>
       <InfoContact>
-        <a
-          href="https://api.whatsapp.com/send?phone=5575983233925&text=Ol%C3%A1%20Emilly"
-          target={"_blank"}
-          rel="noreferrer"
-        >
-          <div>
-            <BsWhatsapp />
-            <h3>Whatsapp</h3>
-          </div>
-        </a>
-        <a
-          href="https://github.com/Emillyalmeida"
-          target={"_blank"}
-          rel="noreferrer"
-        >
+        <LinkSites href="https://api.whatsapp.com/send?phone=5575983233925&text=Ol%C3%A1%20Emilly">
+          <BsWhatsapp />
+          <h3>Whatsapp</h3>
+        </LinkSites>
+        <LinkSites link="https://github.com/Emillyalmeida">
           <div>
             <BsLinkedin />
             <h2>LinkedIn</h2>
           </div>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/emilly-almeida-front-end/"
-          target={"_blank"}
-          rel="noreferrer"
-        >
+        </LinkSites>
+        <LinkSites link="https://www.linkedin.com/in/emilly-almeida-front-end/">
           <div>
             <BsGithub />
             <h2>GitHub</h2>
           </div>
-        </a>
+        </LinkSites>
       </InfoContact>
       <Footer />
     </Container>
