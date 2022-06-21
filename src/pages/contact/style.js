@@ -37,6 +37,29 @@ export const Saudation = styled.div`
   }
 `;
 
+export const MailFone = styled.div`
+  width: 100%;
+  display: flex;
+  padding: 30px 20px;
+  flex-direction: column;
+  gap: 15px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    svg {
+      margin-right: 10px;
+      transform: translate(0, 3px);
+    }
+  }
+`;
+
 export const InfoContact = styled.section`
   margin-top: 40px;
   height: auto;
@@ -45,7 +68,7 @@ export const InfoContact = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 20px;
+  padding: 50px 20px;
   background-color: ${(props) => props.theme.secundaryBg};
   gap: 15px;
   @media (min-width: 768px) {

@@ -1,9 +1,15 @@
 import Container from "../../components/container";
 import Title from "../../components/Title";
-import { InfoContact, Saudation } from "./style";
-import { BsGithub, BsLinkedin, BsFillTelephoneFill } from "react-icons/bs";
+import { InfoContact, MailFone, Saudation } from "./style";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsFillTelephoneFill,
+  BsWhatsapp,
+} from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import imgAvatar from "../../assets/ReadyPlayerMe-Avatar.png";
+import Footer from "../../components/footer";
 
 const Contact = () => {
   return (
@@ -23,17 +29,34 @@ const Contact = () => {
         </div>
         <img src={imgAvatar} alt="" />
       </Saudation>
+
+      <MailFone>
+        <div>
+          <h2>
+            <FiMail />
+            Email
+          </h2>
+          <h3>emillyalmeidan@gmail.com</h3>
+        </div>
+        <div>
+          <h2>
+            <BsFillTelephoneFill />
+            Telefone
+          </h2>
+          <h3>(75)98323-3925</h3>
+        </div>
+      </MailFone>
       <InfoContact>
-        <div>
-          <BsFillTelephoneFill />
-          <h2>Telefone</h2>
-          <h1>(75)983233925</h1>
-        </div>
-        <div>
-          <FiMail />
-          <h2>Email</h2>
-          <h1>emillyalmeidan@gmail.com</h1>
-        </div>
+        <a
+          href="https://api.whatsapp.com/send?phone=5575983233925&text=Ol%C3%A1%20Emilly"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          <div>
+            <BsWhatsapp />
+            <h3>Whatsapp</h3>
+          </div>
+        </a>
         <a
           href="https://github.com/Emillyalmeida"
           target={"_blank"}
@@ -55,6 +78,7 @@ const Contact = () => {
           </div>
         </a>
       </InfoContact>
+      <Footer />
     </Container>
   );
 };
