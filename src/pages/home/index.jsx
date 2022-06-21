@@ -1,7 +1,6 @@
 import {
   AboutMe,
   BtnSeeMore,
-  Footer,
   IAm,
   InfoMe,
   Logo,
@@ -10,9 +9,11 @@ import {
   MySkills,
 } from "./style";
 import myimg from "../../assets/IMG_20220305_120632-removebg-preview.png";
+import test from "../../assets/animeMe__2_-removebg-preview.png";
 import Container from "../../components/container";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Card from "../../components/card";
+import Footer from "../../components/footer";
 import { useHistory } from "react-router-dom";
 import { useContext } from "react";
 import { ListProjectsContext } from "../../providers/projects";
@@ -35,7 +36,7 @@ const Home = () => {
             <h2>Desenvolvedora Front-End</h2>
           </div>
           <figure>
-            <img src={myimg} alt="emilly" />
+            <img src={test} alt="emilly" />
           </figure>
         </IAm>
         <InfoMe>
@@ -52,12 +53,48 @@ const Home = () => {
         <MySkills>
           <h3>Minhas habilidades</h3>
           <ul>
-            <li> &lt; ReactJs /&gt;</li>
-            <li>&lt; JavaScript /&gt;</li>
-            <li> &lt; TypeScript /&gt;</li>
-            <li> &lt; Git /&gt;</li>
-            <li> &lt; Css /&gt;</li>
-            <li> &lt; Html /&gt;</li>
+            <li>
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                alt="ReactJs"
+              />
+              <span>&lt; ReactJs /&gt;</span>
+            </li>
+            <li>
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                alt="Javascript"
+              />
+              <span>&lt; JavaScript /&gt;</span>
+            </li>
+            <li>
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
+              />
+              <span>&lt; TypeScript /&gt;</span>
+            </li>
+            <li>
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+                alt="git"
+              />
+              <span>&lt; Git /&gt;</span>
+            </li>
+            <li>
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                alt="CSS"
+              />
+              <span> &lt; Css /&gt;</span>
+            </li>
+            <li>
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                alt="Html"
+              />
+              <span> &lt; Html /&gt;</span>
+            </li>
           </ul>
         </MySkills>
 
@@ -92,14 +129,50 @@ const Home = () => {
           </figure>
         </AboutMe>
         <MySkills>
-          <h3>Estou estudando</h3>
+          <h3>Estudando...</h3>
           <ul>
-            <li> &lt; Testes unitarios /&gt;</li>
-            <li>&lt; Testes E2E /&gt;</li>
-            <li> &lt; SQL /&gt;</li>
-            <li> &lt; Node.js /&gt;</li>
-            <li> &lt; Sass /&gt;</li>
-            <li> &lt; Vue.js /&gt;</li>
+            <li>
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg"
+                alt="Jest"
+              />
+              <span>&lt; Jest/&gt;</span>
+            </li>
+            <li>
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                alt="Html"
+              />
+              &lt; Testes E2E /&gt;
+            </li>
+            <li>
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+              />
+              <span>&lt; MySQL /&gt;</span>
+            </li>
+            <li>
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+                alt="NodeJs"
+              />
+              <span>&lt; Node.js /&gt;</span>
+            </li>
+            <li>
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+                alt="Sass"
+              />
+              <span>&lt; Sass /&gt;</span>
+            </li>
+            <li>
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg"
+                alt="VueJs"
+              />
+              <span>&lt; Vue.js /&gt;</span>
+            </li>
           </ul>
         </MySkills>
         <MyContact>
@@ -124,9 +197,7 @@ const Home = () => {
             Contato
           </BtnSeeMore>
         </MyContact>
-        <Footer>
-          <h3> &copy;Emilly Almeida</h3>
-        </Footer>
+        <Footer />
       </Container>
     </>
   );

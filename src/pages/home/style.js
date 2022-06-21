@@ -80,41 +80,53 @@ export const InfoMe = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px 10%;
+  padding: 60px 10%;
   gap: 20px;
   background-color: ${(props) => props.theme.terciary};
 `;
 
 export const MySkills = styled.div`
-  width: 60%;
-  min-width: 300px;
-  max-width: 500px;
+  width: 100%;
   height: auto;
-  margin-top: 50px;
-  border-radius: 10px;
   background-color: ${(props) => props.theme.secundaryBg};
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 25px 0;
-  gap: 20px;
+  align-items: flex-start;
+  padding: 65px 0;
+  gap: 25px;
 
   h3 {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    padding-left: 30px;
   }
 
   ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
     list-style: none;
     li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding-top: 7px;
-      font-size: 1.2rem;
+      font-size: 1rem;
+      gap: 10px;
+
+      img {
+        width: 135px;
+        height: 135px;
+      }
     }
   }
 `;
 
 export const MyPortfolio = styled.div`
-  padding: 50px 10px;
+  padding: 60px 10px;
   width: 100%;
   height: auto;
   display: flex;
@@ -145,7 +157,7 @@ export const AboutMe = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 20px 20px;
+  padding: 60px 20px;
   background-color: ${(props) => props.theme.terciary};
 
   div {
@@ -226,13 +238,4 @@ export const MyContact = styled.div`
       cursor: pointer;
     }
   }
-`;
-
-export const Footer = styled.footer`
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: ${(props) => props.theme.terciary};
 `;
