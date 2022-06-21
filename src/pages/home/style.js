@@ -1,5 +1,31 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import circle from "../../assets/circle.svg";
+
+const float = keyframes`
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-30px)
+  }
+
+  100%{
+    transform: translateY(0px)
+  }
+`;
+
+const Revealtext = keyframes`
+
+from{
+  transform: translateY(20px);
+}
+
+to{
+  opacity: 1;
+  transform: none;
+}
+`;
 
 export const IAm = styled.section`
   width: 100%;
@@ -27,6 +53,23 @@ export const IAm = styled.section`
       padding-top: 10px;
       padding-bottom: 30px;
       text-align: center;
+
+      span {
+        opacity: 0;
+        animation: ${Revealtext} 0.5s forwards;
+      }
+
+      .second {
+        animation-delay: 1s;
+      }
+
+      .terciary {
+        animation-delay: 1.5s;
+      }
+
+      .last {
+        animation-delay: 2s;
+      }
     }
   }
 
@@ -39,11 +82,14 @@ export const IAm = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: ${float} 5s 2s linear infinite;
 
     img {
+      filter: drop-shadow(2px 4px 6px #121212);
       width: 200px;
       height: 220px;
       border-radius: 50%;
+      transform: translateY(0px);
     }
   }
 `;
@@ -116,8 +162,10 @@ export const MySkills = styled.div`
       padding-top: 7px;
       font-size: 1rem;
       gap: 10px;
+      font-weight: 600;
 
       img {
+        filter: drop-shadow(2px 4px 6px #121212);
         width: 135px;
         height: 135px;
       }

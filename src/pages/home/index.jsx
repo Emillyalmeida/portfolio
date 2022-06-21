@@ -33,7 +33,12 @@ const Home = () => {
         <IAm>
           <div>
             <h1>Olá, Eu sou a Emilly</h1>
-            <h2>Desenvolvedora Front-End</h2>
+            <h2>
+              <span>&lt; </span>
+              <span className="second"> Desenvolvedora</span>
+              <span className="terciary"> Front-end</span>
+              <span className="last"> /&gt;</span>
+            </h2>
           </div>
           <figure>
             <img src={test} alt="emilly" />
@@ -115,13 +120,11 @@ const Home = () => {
             <p>
               Prazer sou a Emilly! Tenho 22 anos, sou formada em tecnica qm
               quimica mas atualmente sou Desenvolvedora Front-End.Sou Bahiana,
-              amo experimentar coisas novas e desbravar Lorem ipsum dolor, sit
-              amet consectetur adipisicing elit. Sint impedit omnis reiciendis
-              sed doloribus rerum consequatur obcaecati tenetur esse, dolorum
-              ipsa.
+              amo experimentar coisas novas e desbravar novos mundos. Se quiser
+              me conhecer mais sobre mim e meus Hobbies click em saiba mais.
             </p>
             <BtnSeeMore onClick={() => history.push("/sobre-mim")}>
-              Me conheça
+              Saiba Mais
             </BtnSeeMore>
           </div>
           <figure>
@@ -140,10 +143,10 @@ const Home = () => {
             </li>
             <li>
               <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-                alt="Html"
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg"
+                alt="tailwindcss"
               />
-              &lt; Testes E2E /&gt;
+              <span>&lt; Tailwindcss /&gt;</span>
             </li>
             <li>
               <img
