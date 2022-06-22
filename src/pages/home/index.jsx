@@ -8,14 +8,20 @@ import {
   MyPortfolio,
   MySkills,
 } from "./style";
+
 import myimg from "../../assets/IMG_20220305_120632-removebg-preview.png";
 import test from "../../assets/animeMe__2_-removebg-preview.png";
+
 import Container from "../../components/container";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Card from "../../components/card";
 import Footer from "../../components/footer";
+import LinkSites from "../../components/link";
+
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+
 import { useHistory } from "react-router-dom";
 import { useContext } from "react";
+
 import { ListProjectsContext } from "../../providers/projects";
 
 const Home = () => {
@@ -143,10 +149,10 @@ const Home = () => {
             </li>
             <li>
               <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg"
-                alt="tailwindcss"
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/wordpress/wordpress-plain.svg"
+                alt="wordpress"
               />
-              <span>&lt; Tailwindcss /&gt;</span>
+              <span>&lt; wordpress /&gt;</span>
             </li>
             <li>
               <img
@@ -181,20 +187,12 @@ const Home = () => {
         <MyContact>
           <h2> Acompanhe meus projetos</h2>
           <div>
-            <a
-              href="https://github.com/Emillyalmeida"
-              target={"_blank"}
-              rel="noreferrer"
-            >
+            <LinkSites link="https://github.com/Emillyalmeida">
               <BsGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/emilly-almeida-front-end/"
-              target={"_blank"}
-              rel="noreferrer"
-            >
+            </LinkSites>
+            <LinkSites link="https://www.linkedin.com/in/emilly-almeida-front-end/">
               <BsLinkedin />
-            </a>
+            </LinkSites>
           </div>
           <BtnSeeMore onClick={() => history.push("/contato")}>
             Contato

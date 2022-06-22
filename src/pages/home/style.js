@@ -134,17 +134,16 @@ export const InfoMe = styled.section`
 export const MySkills = styled.div`
   width: 100%;
   height: auto;
-  background-color: ${(props) => props.theme.secundaryBg};
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 65px 0;
   gap: 25px;
 
   h3 {
     font-weight: 700;
     font-size: 1.75rem;
-    padding-left: 30px;
+    text-align: center;
   }
 
   ul {
@@ -155,12 +154,13 @@ export const MySkills = styled.div`
     justify-content: center;
     gap: 25px;
     list-style: none;
+
     li {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding-top: 7px;
-      font-size: 1rem;
+      font-size: 1.1rem;
       gap: 10px;
       font-weight: 600;
 
@@ -271,19 +271,5 @@ export const MyContact = styled.div`
     height: 100px;
     align-items: center;
     gap: 30px;
-
-    a {
-      color: ${(props) => props.theme.color};
-
-      &:hover {
-        opacity: 0.6;
-        transition: opacity 0, 3s;
-      }
-    }
-
-    svg {
-      font-size: 3rem;
-      cursor: pointer;
-    }
   }
 `;
