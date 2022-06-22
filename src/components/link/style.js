@@ -15,6 +15,6 @@ export const Ancor = styled.a`
   }
 
   svg {
-    font-size: 4rem;
+    font-size: ${(props) => (props.isRow ? "3rem" : "4rem")};
   }
 `;

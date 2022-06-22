@@ -8,6 +8,11 @@ const Nav = () => {
   const [open, setOpen] = useState(false);
   const history = useHistory();
 
+  const navgation = (path) => {
+    setOpen(false);
+    history.push(path);
+  };
+
   return (
     <>
       <MenuClose onClick={() => setOpen(true)}>
@@ -17,10 +22,10 @@ const Nav = () => {
       <MenuOpen isOpen={open}>
         <IoMdClose onClick={() => setOpen(false)} />
         <ul>
-          <li onClick={() => history.push("/")}>Home</li>
-          <li onClick={() => history.push("/portfolio")}>Portfólio</li>
-          <li onClick={() => history.push("/sobre-mim")}>Sobre mim</li>
-          <li onClick={() => history.push("/contato")}>Contato</li>
+          <li onClick={() => navgation("/")}>Home</li>
+          <li onClick={() => navgation("/portfolio")}>Portfólio</li>
+          <li onClick={() => navgation("/sobre-mim")}>Sobre mim</li>
+          <li onClick={() => navgation("/contato")}>Contato</li>
         </ul>
       </MenuOpen>
     </>
