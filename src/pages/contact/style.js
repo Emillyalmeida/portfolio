@@ -13,6 +13,7 @@ to{
 `;
 
 export const Saudation = styled.div`
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column-reverse;
@@ -53,7 +54,7 @@ export const Saudation = styled.div`
 export const MailFone = styled.div`
   width: 100%;
   display: flex;
-  padding: 30px 20px;
+  padding: 50px 20px;
   flex-direction: column;
   gap: 25px;
   @media (min-width: 768px) {
@@ -74,7 +75,6 @@ export const MailFone = styled.div`
 `;
 
 export const InfoContact = styled.section`
-  margin-top: 40px;
   height: auto;
   width: 100%;
   display: flex;
@@ -82,9 +82,88 @@ export const InfoContact = styled.section`
   align-items: center;
   justify-content: space-evenly;
   padding: 50px 20px;
-  background-color: ${(props) => props.theme.secundaryBg};
   gap: 15px;
   @media (min-width: 768px) {
     flex-direction: row;
+  }
+`;
+
+export const FormContainer = styled.div`
+  margin-top: 50px;
+  width: 100%;
+  background-color: ${(props) => props.theme.terciary};
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding: 30px 20px;
+
+  div {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      color: ${(props) => props.theme.color};
+    }
+    img {
+      width: 400px;
+      height: 240px;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    input {
+      width: 300px;
+      height: 40px;
+      border-radius: 7px;
+      background-color: transparent;
+      border-width: 1px;
+      border-style: solid;
+      border-color: ${(props) => props.theme.color};
+
+      &::placeholder {
+        padding-left: 5px;
+        color: ${(props) => props.theme.color};
+        font-weight: 600;
+      }
+    }
+    textarea {
+      width: 300px;
+      border-radius: 7px;
+      border-color: ${(props) => props.theme.color};
+      background-color: transparent;
+
+      &::placeholder {
+        padding-top: 6px;
+        padding-left: 5px;
+        color: ${(props) => props.theme.color};
+        font-weight: 600;
+      }
+    }
+
+    button {
+      border: none;
+      width: 120px;
+      border-radius: 7px;
+      background-color: ${(props) => props.theme.button.backgroundColor};
+      color: ${(props) => props.theme.button.textColor};
+      height: auto;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 5px 10px;
+      &:hover {
+        background-color: ${(props) => props.theme.button.hover};
+        transition: 0.3s;
+      }
+    }
   }
 `;

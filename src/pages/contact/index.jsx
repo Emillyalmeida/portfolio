@@ -3,7 +3,7 @@ import Title from "../../components/Title";
 import Footer from "../../components/footer";
 import LinkSites from "../../components/link";
 
-import { InfoContact, MailFone, Saudation } from "./style";
+import { FormContainer, InfoContact, MailFone, Saudation } from "./style";
 
 import {
   BsGithub,
@@ -12,7 +12,9 @@ import {
   BsWhatsapp,
 } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
+
 import imgAvatar from "../../assets/ReadyPlayerMe-Avatar.png";
+import contactme from "../../assets/contact-page-banner.png";
 
 const Contact = () => {
   return (
@@ -21,6 +23,7 @@ const Contact = () => {
         <h1> Contato</h1>
       </Title>
       <Saudation>
+        <img src={imgAvatar} alt="meu avatar" />
         <div>
           <p>
             Fico feliz que queira entrar em contato comigo. Caso tenha alguma
@@ -30,8 +33,41 @@ const Contact = () => {
             seu feedback.
           </p>
         </div>
-        <img src={imgAvatar} alt="" />
       </Saudation>
+
+      <FormContainer>
+        <div>
+          <img src={contactme} alt="" />
+        </div>
+
+        <form
+          target="_blank"
+          action="https://formsubmit.co/emillyalmeidan@gmail.com"
+          method="POST"
+        >
+          <h3>Fale Comigo</h3>
+          <input
+            type="text"
+            name="name"
+            placeholder="Digite seu Nome"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Digite seu E-mail"
+            required
+          />
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Digite seu feedback aqui !!"
+            required
+          />
+          <button type="submit">Enviar mensagem</button>
+        </form>
+      </FormContainer>
 
       <MailFone>
         <div>
@@ -52,19 +88,15 @@ const Contact = () => {
       <InfoContact>
         <LinkSites href="https://api.whatsapp.com/send?phone=5575983233925&text=Ol%C3%A1%20Emilly">
           <BsWhatsapp />
-          <h3>Whatsapp</h3>
+          <h2>Whatsapp</h2>
         </LinkSites>
         <LinkSites link="https://github.com/Emillyalmeida">
-          <div>
-            <BsLinkedin />
-            <h2>LinkedIn</h2>
-          </div>
+          <BsLinkedin />
+          <h2>LinkedIn</h2>
         </LinkSites>
         <LinkSites link="https://www.linkedin.com/in/emilly-almeida-front-end/">
-          <div>
-            <BsGithub />
-            <h2>GitHub</h2>
-          </div>
+          <BsGithub />
+          <h2>GitHub</h2>
         </LinkSites>
       </InfoContact>
       <Footer />
