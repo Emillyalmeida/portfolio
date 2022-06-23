@@ -9,8 +9,7 @@ export const LiCard = styled.li`
   cursor: pointer;
   margin-bottom: 10px;
   @media (min-width: 768px) {
-    width: 330px;
-    height: 280px;
+    width: 300px;
   }
 
   img {
@@ -18,8 +17,7 @@ export const LiCard = styled.li`
     height: 210px;
     border-radius: 10px;
     @media (min-width: 768px) {
-      width: 330px;
-      height: 280px;
+      width: 300px;
     }
   }
 

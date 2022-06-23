@@ -7,7 +7,7 @@ const Card = ({ project }) => {
   return (
     <>
       <ModalProject onClose={onClose} isOpen={isOpen} project={project} />
-      <LiCard onClick={onOpen}>
+      <LiCard onClick={onOpen} img={project.img}>
         <img src={project.img} alt={project.name} />
         <div></div>
         <section>

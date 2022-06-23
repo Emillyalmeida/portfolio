@@ -13,7 +13,7 @@ body{
   color: ${(props) => props.theme.color};
   font-family: 'Roboto Mono', monospace;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   list-style: none;
     
 }
@@ -23,6 +23,10 @@ h1,h2,h3,h4{
 button{
     cursor: pointer;
     font-family: 'Roboto Mono', monospace;
+}
+
+.carousel-root{
+    width: 100%;
 }
 /* ::-webkit-scrollbar {
 display: none;
