@@ -2,9 +2,16 @@ import styled from "styled-components";
 
 export const ListUl = styled.ul`
   width: 90%;
-  display: flex;
+  display: grid;
+  align-items: center;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  grid-template-columns: auto;
+  @media (min-width: 768px) {
+    grid-template-columns: auto auto;
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: auto auto auto auto;
+  }
   gap: 10px;
   padding: 50px 20px;
 `;
@@ -13,7 +20,7 @@ export const Slide = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 350px;
+  height: 400px;
   width: 100%;
   margin: 0;
   font-size: 4em;
@@ -25,12 +32,13 @@ export const Slide = styled.div`
 
   div {
     backdrop-filter: blur(4px);
-    height: 350px;
+    height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     h2 {
+      padding-top: 30px;
       padding-left: 20px;
       font-size: 3.5rem;
       font-weight: 700;
