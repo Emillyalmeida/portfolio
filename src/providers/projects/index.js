@@ -2,6 +2,10 @@ import AdopetImg from "../../assets/Adopet-cinza.png";
 import DoItImg from "../../assets/DoIt.png";
 import KenzieHubImg from "../../assets/kenzieHub.png";
 import MarvelHouseImg from "../../assets/marvelHouse.png";
+import Nukenzie from "../../assets/Nukenzie.png";
+import Jokempo from "../../assets/jokenpô.png";
+import ReaderStore from "../../assets/readerStore.png";
+import TorreHaroi from "../../assets/torre-de-hanoi.png";
 
 import { createContext, useState } from "react";
 
@@ -77,6 +81,50 @@ export const ListProjectsProvider = ({ children }) => {
       ],
       link: "https://kenziehub-redux.vercel.app/",
       github: "https://github.com/Emillyalmeida/kenziehub-redux",
+    },
+    {
+      id: 5,
+      name: "NuKenzie",
+      description:
+        "Uma maneira facil e rápida para organizar suas finanças do mês",
+      img: `${Nukenzie}`,
+      techs: ["ReactJS", "Css", "React Router Dom"],
+      link: "https://react-entrega-s1-nu-kenzie-emillyalmeida.vercel.app/",
+      github:
+        "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s1-nu-kenzie-emillyalmeida",
+    },
+    {
+      id: 6,
+      name: "ReaderStore",
+      description:
+        "Um E-commerce simples de Livros, com darkMode, que teve objetivo de aplicar os conhecimentos de gerenciamneto de estado no React",
+      img: `${ReaderStore}`,
+      techs: ["ReactJS", "Styled Components", "ContextApi", "React Router Dom"],
+      link: "https://react-entrega-s3-kenzishop-com-context-api-emillyalmeida.vercel.app/",
+      github:
+        "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-kenzishop-com-context-api-emillyalmeida",
+    },
+    {
+      id: 7,
+      name: "Torre de Hanoi",
+      description:
+        "A Torre de Hanoi é um quebra-cabeças que consiste de três varetas e um número de discos de diferentes tamanhos que podem ser encaixados em qualquer vareta. O jogo começa com todos os discos empilhados em uma vareta, do maior (embaixo) para o menor (no topo).",
+      img: `${TorreHaroi}`,
+      techs: ["JavaScript", "Css", "Html"],
+      link: "https://kenzie-academy-brasil-developers.github.io/m2-entrega-torre-de-hanoi-sprint-1a-Emillyalmeida/",
+      github:
+        "https://github.com/Kenzie-Academy-Brasil-Developers/m2-entrega-torre-de-hanoi-sprint-1a-Emillyalmeida",
+    },
+    {
+      id: 8,
+      name: "Jokenpô",
+      description:
+        "Criação de um jogo classico usando os conceitos de POO aprendidos, consiste em que duas pessoas escolhem entre pedra, papel ou tesoura, e mostram suas escolhas com as mãos",
+      img: `${Jokempo}`,
+      techs: ["JavaScript", "Css", "Html", "POO"],
+      link: "https://kenzie-academy-brasil-developers.github.io/m2-entrega-jogo-de-azar-poo-sprint2b-Emillyalmeida/",
+      github:
+        "https://github.com/Kenzie-Academy-Brasil-Developers/m2-entrega-jogo-de-azar-poo-sprint2b-Emillyalmeida/",
     },
   ]);
 
