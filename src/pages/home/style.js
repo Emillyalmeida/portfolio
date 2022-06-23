@@ -188,10 +188,16 @@ export const MyPortfolio = styled.div`
   }
 
   ul {
-    width: 100%;
-    display: flex;
+    display: grid;
+    align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    grid-template-columns: auto;
+    @media (min-width: 768px) {
+      grid-template-columns: auto auto;
+    }
+    @media (min-width: 1200px) {
+      grid-template-columns: auto auto auto auto;
+    }
     gap: 10px;
   }
 

@@ -112,7 +112,7 @@ const Home = () => {
         <MyPortfolio>
           <h2>Portfólio</h2>
           <ul>
-            {listProjects.map((project) => (
+            {listProjects.slice(0, 4).map((project) => (
               <Card project={project} key={project.id} />
             ))}
           </ul>
