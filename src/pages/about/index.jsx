@@ -1,8 +1,9 @@
 import Container from "../../components/container";
 import Title from "../../components/Title";
 import Footer from "../../components/footer";
+import LinkSites from "../../components/link";
 
-import imgAnime from "../../assets/myanime.png";
+import imgAnime from "../../assets/myAnime.png";
 import books from "../../assets/books.gif";
 import croche from "../../assets/croche.webp";
 
@@ -11,7 +12,6 @@ import { BsInstagram } from "react-icons/bs";
 
 import { Hobbies, InfoHobbies } from "./style";
 import { Saudation } from "../contact/style";
-import LinkSites from "../../components/link";
 
 const AboutMe = () => {
   return (
@@ -47,9 +47,7 @@ const AboutMe = () => {
             </p>
             <LinkSites
               isRow
-              link={
-                "https://api.whatsapp.com/send?phone=5575983233925&text=Ol%C3%A1%20Emilly"
-              }
+              link={"https://www.skoob.com.br/share/user/Reader.Black"}
             >
               <ImBook />
               <h3>Skoob</h3>
@@ -69,7 +67,7 @@ const AboutMe = () => {
             </p>
             <LinkSites
               isRow
-              link="https://api.whatsapp.com/send?phone=5575983233925&text=Ol%C3%A1%20Emilly"
+              link="https://instagram.com/emma_croche?igshid=YmMyMTA2M2Y="
             >
               <BsInstagram />
               <h3>Instagram</h3>
