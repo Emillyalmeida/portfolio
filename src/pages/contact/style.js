@@ -130,6 +130,10 @@ export const FormContainer = styled.div`
       border-style: solid;
       border-color: ${(props) => props.theme.color};
 
+      &:focus {
+        background-color: white;
+      }
+
       &::placeholder {
         padding-left: 5px;
         color: ${(props) => props.theme.color};
@@ -147,6 +151,9 @@ export const FormContainer = styled.div`
         padding-left: 5px;
         color: ${(props) => props.theme.color};
         font-weight: 600;
+      }
+      &:focus {
+        background-color: white;
       }
     }
 
