@@ -34,7 +34,7 @@ export const ListProjectsProvider = ({ children }) => {
       id: 2,
       name: "Marvel's House",
       description:
-        "Consiste de uma tela de lista de quadrinhos, consumindo a Api da Marvel. Tem um sistema de paginação onde pode navegar para ver mais quadrinhos ou voltar para as paginas anteriores. Além disso, 10% dos quadinho são marcados com o selo de raro aleatoriamente.",
+        "Consiste de uma tela de lista de quadrinhos, consumindo a Api da Marvel. Tem um sistema de paginação onde pode navegar para ver mais quadrinhos ou voltar para as paginas anteriores. ",
       img: `${MarvelHouseImg}`,
       techs: [
         "ReactJS",
@@ -108,7 +108,7 @@ export const ListProjectsProvider = ({ children }) => {
       id: 7,
       name: "Torre de Hanoi",
       description:
-        "A Torre de Hanoi é um quebra-cabeças que consiste de três varetas e um número de discos de diferentes tamanhos que podem ser encaixados em qualquer vareta. O jogo começa com todos os discos empilhados em uma vareta, do maior (embaixo) para o menor (no topo).",
+        "A Torre de Hanoi é um quebra-cabeças que consiste de três varetas e um número de discos de diferentes tamanhos que podem ser encaixados em qualquer vareta. O jogo começa com todos os discos empilhados em uma vareta.",
       img: `${TorreHaroi}`,
       techs: ["JavaScript", "Css", "Html"],
       link: "https://kenzie-academy-brasil-developers.github.io/m2-entrega-torre-de-hanoi-sprint-1a-Emillyalmeida/",
