@@ -4,7 +4,7 @@ export const Btn = styled.button`
   position: fixed;
   z-index: 9999999999;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
   background-color: transparent;
   color: ${(props) => props.theme.color};
   font-size: 2rem;

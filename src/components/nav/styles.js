@@ -12,6 +12,7 @@ export const MenuClose = styled.div`
   border-radius: 50%;
   top: 10px;
   right: 10px;
+  cursor: pointer;
   background-color: ${(props) => props.theme.nav.backgroundColor};
   @media (min-width: 768px) {
     width: 65px;
