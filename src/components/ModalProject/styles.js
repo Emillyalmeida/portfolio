@@ -7,6 +7,7 @@ export const ModalContainer = styled.div`
   overflow: scroll;
   position: fixed;
   top: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   display: ${(props) => (props.isOpen ? "flex" : "none")};
   flex-direction: column;
@@ -19,6 +20,9 @@ export const MSection = styled.div`
   width: 90%;
   margin-top: 10vh;
   margin-bottom: 20vh;
+  @media (max-height: 700px) and (max-width: 700px) {
+    margin-top: 2vh;
+  } /*add media for the phone nexus5 */
   position: relative;
   max-width: 1200px;
   height: auto;
@@ -106,7 +110,7 @@ export const MSection = styled.div`
       }
 
       footer {
-        button + button {
+        a + a {
           margin-left: 20px;
         }
         button {

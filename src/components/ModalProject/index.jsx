@@ -21,8 +21,13 @@ const ModalProject = ({ onClose, isOpen, project }) => {
               </ul>
             </div>
             <footer>
-              <button>GitHub</button>
-              <button>Acessar</button>
+              <a href={project.github} target={"_blank"} rel="noreferrer">
+                <button>GitHub</button>
+              </a>
+
+              <a href={project.link} target={"_blank"} rel="noreferrer">
+                <button>Acessar</button>
+              </a>
             </footer>
           </section>
           <button
