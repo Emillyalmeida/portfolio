@@ -180,7 +180,7 @@ const Home = () => {
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
                 alt="MongoDB"
               />
-              <span>&lt; Vue.js /&gt;</span>
+              <span>&lt; MongoDB /&gt;</span>
             </li>
           </ul>
         </MySkills>
