@@ -149,10 +149,10 @@ const Home = () => {
             </li>
             <li>
               <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/wordpress/wordpress-plain.svg"
-                alt="wordpress"
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg"
+                alt="tailwindcss"
               />
-              <span>&lt; wordpress /&gt;</span>
+              <span>&lt; TailwindCSS /&gt;</span>
             </li>
             <li>
               <img
@@ -177,8 +177,8 @@ const Home = () => {
             </li>
             <li>
               <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg"
-                alt="VueJs"
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB"
               />
               <span>&lt; Vue.js /&gt;</span>
             </li>
