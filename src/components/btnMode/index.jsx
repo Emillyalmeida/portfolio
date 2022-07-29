@@ -8,7 +8,10 @@ const BtnMode = () => {
   const { currentTheme, setCurrentTheme, getOpositeTheme } =
     useContext(ColorContext);
   return (
-    <Btn onClick={() => setCurrentTheme(getOpositeTheme())}>
+    <Btn
+      aria-label={currentTheme}
+      onClick={() => setCurrentTheme(getOpositeTheme())}
+    >
       {currentTheme === "light" ? <BsMoonFill /> : <FaSun />}
     </Btn>
   );
