@@ -200,10 +200,16 @@ const Home = () => {
         <MyContact>
           <h2> Acompanhe meus projetos</h2>
           <div>
-            <LinkSites link="https://github.com/Emillyalmeida">
+            <LinkSites
+              link="https://github.com/Emillyalmeida"
+              aria-label="github"
+            >
               <BsGithub />
             </LinkSites>
-            <LinkSites link="https://www.linkedin.com/in/emilly-almeida-front-end/">
+            <LinkSites
+              link="https://www.linkedin.com/in/emilly-almeida-front-end/"
+              aria-label="Linkedin"
+            >
               <BsLinkedin />
             </LinkSites>
           </div>
