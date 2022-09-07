@@ -1,18 +1,34 @@
 import { LiCard } from "./styles";
-import { useDisclosure } from "@chakra-ui/react";
-import ModalProject from "../ModalProject";
+
+import { BsGithub } from "react-icons/bs";
+import { ImLink } from "react-icons/im";
+import { MdAddCircle } from "react-icons/md";
+
+import { useHistory } from "react-router-dom";
 
 const Card = ({ project }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const history = useHistory();
   return (
     <>
-      <ModalProject onClose={onClose} isOpen={isOpen} project={project} />
-      <LiCard onClick={onOpen} img={project.img}>
+      <LiCard img={project.img}>
         <img src={project.img} alt={project.name} />
         <div></div>
         <section>
           <div>
-            <p>Veja detalhes</p>
+            <h3 onClick={() => history.push(`/projetos/${project.id}`)}>
+              {project.name}
+            </h3>
+            <div>
+              <a target={"_blank"} rel="noreferrer" href={project.link}>
+                <ImLink />
+              </a>
+              <a target={"_blank"} rel="noreferrer" href={project.github}>
+                <BsGithub />
+              </a>
+              <button onClick={() => history.push(`/projetos/${project.id}`)}>
+                <MdAddCircle />
+              </button>
+            </div>
           </div>
         </section>
       </LiCard>

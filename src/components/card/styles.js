@@ -29,8 +29,8 @@ export const LiCard = styled.li`
     width: 100%;
     height: 100%;
     opacity: 0;
-    background-color: ${(props) => props.theme.card.backgroundColor};
-    transition: opacity 0.5s;
+    background-color: ${(props) => props.theme.terciary};
+    transition: opacity 0.6s;
     border-radius: 8px;
   }
 
@@ -46,21 +46,52 @@ export const LiCard = styled.li`
     align-items: center;
     justify-content: center;
 
-    div {
-      width: 125px;
-      height: 125px;
+    > div {
+      width: 100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 1.1rem;
-      background-color: ${(props) => props.theme.terciary};
-      border-radius: 50%;
+      gap: 40px;
+      color: ${(props) => props.theme.color};
       opacity: 0;
-      transition: opacity 0.6s;
+      transition: opacity 0.4s;
+
+      h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 2.1rem;
+        text-align: center;
+      }
+
+      div {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+        a {
+          color: ${(props) => props.theme.color};
+
+          svg {
+            font-size: 2rem;
+          }
+          &:hover {
+            opacity: 0.75;
+          }
+        }
+
+        button {
+          border: none;
+          color: ${(props) => props.theme.color};
+          background-color: transparent;
+          font-size: 2rem;
+
+          &:hover {
+            opacity: 0.75;
+          }
+        }
+      }
     }
   }
 
