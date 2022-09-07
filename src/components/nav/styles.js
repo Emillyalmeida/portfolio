@@ -50,7 +50,7 @@ export const MenuOpen = styled.div`
     padding-top: 80px;
   }
 
-  svg {
+  > svg {
     position: fixed;
     top: 15px;
     right: 15px;
@@ -74,6 +74,10 @@ export const MenuOpen = styled.div`
       cursor: pointer;
       @media (min-width: 768px) {
         font-size: 1.5rem;
+      }
+
+      svg {
+        transform: translateY(3px);
       }
 
       &:hover {

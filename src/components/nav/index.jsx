@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
+import { FaHome, FaUser } from "react-icons/fa";
+import { MdEmail, MdOutlineWork } from "react-icons/md";
 import { useHistory } from "react-router-dom";
 import { MenuClose, MenuOpen } from "./styles";
 
@@ -22,10 +24,18 @@ const Nav = () => {
       <MenuOpen isOpen={open}>
         <IoMdClose onClick={() => setOpen(false)} />
         <ul>
-          <li onClick={() => navgation("/")}>Home</li>
-          <li onClick={() => navgation("/portfolio")}>Portfólio</li>
-          <li onClick={() => navgation("/sobre-mim")}>Sobre mim</li>
-          <li onClick={() => navgation("/contato")}>Contato</li>
+          <li onClick={() => navgation("/")}>
+            <FaHome /> Home
+          </li>
+          <li onClick={() => navgation("/portfolio")}>
+            <MdOutlineWork /> Portfólio
+          </li>
+          <li onClick={() => navgation("/sobre-mim")}>
+            <FaUser /> Sobre mim
+          </li>
+          <li onClick={() => navgation("/contato")}>
+            <MdEmail /> Contato
+          </li>
         </ul>
       </MenuOpen>
     </>
