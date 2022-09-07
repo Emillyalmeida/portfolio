@@ -128,8 +128,13 @@ export const ListProjectsProvider = ({ children }) => {
     },
   ]);
 
+  const getProjectByID = (id) => {
+    const find = listProjects.find((project) => project.id === Number(id));
+    return find;
+  };
+
   return (
-    <ListProjectsContext.Provider value={{ listProjects }}>
+    <ListProjectsContext.Provider value={{ listProjects, getProjectByID }}>
       {children}
     </ListProjectsContext.Provider>
   );
