@@ -6,6 +6,8 @@ import Nukenzie from "../../assets/Nukenzie.png";
 import Jokempo from "../../assets/jokenpô.png";
 import ReaderStore from "../../assets/readerStore.png";
 import TorreHaroi from "../../assets/torre-de-hanoi.png";
+import TmdbMovies from "../../assets/tmdb-movies.png";
+import ShopMovies from "../../assets/shop-movie.png";
 
 import { createContext, useState } from "react";
 
@@ -32,21 +34,21 @@ export const ListProjectsProvider = ({ children }) => {
     },
     {
       id: 2,
-      name: "Marvel's House",
+      name: "TMDB - Movies",
       description:
-        "Consiste de uma tela de lista de quadrinhos, consumindo a Api da Marvel. Tem um sistema de paginação onde pode navegar para ver mais quadrinhos ou voltar para as paginas anteriores. ",
-      img: `${MarvelHouseImg}`,
+        "Na tela inicial mostrar as têndencias do dia, e os filmes mais populares e mais votados no momento.Contém uma feature de pesquisa que mostra os filmes relacionados. Além disso, é possível também criar listas e adicionar filmes as listas, visualizar os items presentes e remove -los. Contém também uma pagina de favoritos onde pode se ver os item favoritos. Além dark theme onde é possível alternar do claro para o escuro. ",
+      img: `${TmdbMovies}`,
       techs: [
         "ReactJS",
-        "Styled Components",
+        "TypeScript",
         "Chakra UI",
         "Axios",
+        "React-Icons",
         "React Hook Form",
         "React Router Dom",
       ],
-      link: "https://marvels-house.vercel.app/",
-      github:
-        "https://github.com/Emillyalmeida/challenge-developer-frontend-contabilizei",
+      link: "https://movies-tmdb-inky.vercel.app/",
+      github: "https://github.com/Emillyalmeida/movies-tmdb",
     },
     {
       id: 3,
@@ -67,6 +69,16 @@ export const ListProjectsProvider = ({ children }) => {
     },
     {
       id: 4,
+      name: "Movie Shop",
+      description:
+        "Consiste de uma tela inical com uma lista de filmes, consumindo a Api da TMDB, onde pode-se navegar pelas as páginas e ver mais filmes.Nessa aplicação é possível ver os quadinhos disponíveis e adciona-los ao carrinho, além de uma lista de favoritos onde pode-se adcionar e remover os seus filmes preferidos.",
+      img: `${ShopMovies}`,
+      techs: ["Nuxt", "VueJs", "Chakra UI", "Vuex", "Vue Router", "Axios"],
+      link: "https://shop-movies-emilly-almeida.vercel.app/",
+      github: "https://github.com/Emillyalmeida/shop-movies-vue",
+    },
+    {
+      id: 5,
       name: "KenzieHub ",
       description:
         "É uma plataforma que tem o objetivo de organizar as suas tecnologias estudadas e ver o seu avanço de nível nelas.",
@@ -83,7 +95,25 @@ export const ListProjectsProvider = ({ children }) => {
       github: "https://github.com/Emillyalmeida/kenziehub-redux",
     },
     {
-      id: 5,
+      id: 6,
+      name: "Marvel's House",
+      description:
+        "Consiste de uma tela de lista de quadrinhos, consumindo a Api da Marvel. Tem um sistema de paginação onde pode navegar para ver mais quadrinhos ou voltar para as paginas anteriores. ",
+      img: `${MarvelHouseImg}`,
+      techs: [
+        "ReactJS",
+        "Styled Components",
+        "Chakra UI",
+        "Axios",
+        "React Hook Form",
+        "React Router Dom",
+      ],
+      link: "https://marvels-house.vercel.app/",
+      github:
+        "https://github.com/Emillyalmeida/challenge-developer-frontend-contabilizei",
+    },
+    {
+      id: 7,
       name: "NuKenzie",
       description:
         "Uma maneira facil e rápida para organizar suas finanças do mês",
@@ -94,7 +124,7 @@ export const ListProjectsProvider = ({ children }) => {
         "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s1-nu-kenzie-emillyalmeida",
     },
     {
-      id: 6,
+      id: 8,
       name: "ReaderStore",
       description:
         "Um E-commerce simples de Livros, com darkMode, que teve objetivo de aplicar os conhecimentos de gerenciamneto de estado no React",
@@ -105,7 +135,7 @@ export const ListProjectsProvider = ({ children }) => {
         "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-kenzishop-com-context-api-emillyalmeida",
     },
     {
-      id: 7,
+      id: 9,
       name: "Torre de Hanoi",
       description:
         "A Torre de Hanoi é um quebra-cabeças que consiste de três varetas e um número de discos de diferentes tamanhos que podem ser encaixados em qualquer vareta. O jogo começa com todos os discos empilhados em uma vareta.",
@@ -116,7 +146,7 @@ export const ListProjectsProvider = ({ children }) => {
         "https://github.com/Kenzie-Academy-Brasil-Developers/m2-entrega-torre-de-hanoi-sprint-1a-Emillyalmeida",
     },
     {
-      id: 8,
+      id: 10,
       name: "Jokenpô",
       description:
         "Criação de um jogo classico usando os conceitos de POO aprendidos, consiste em que duas pessoas escolhem entre pedra, papel ou tesoura, e mostram suas escolhas com as mãos",
